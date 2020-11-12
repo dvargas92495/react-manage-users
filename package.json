@@ -1,12 +1,12 @@
 {
   "name": "react-users",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Manage users in React, for any oauth provider",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "format": "prettier --write \"src/**/*.tsx?\"",
+    "format": "prettier --write \"src/**/*.tsx\"",
     "lint": "tslint -p tsconfig.json",
     "prepare": "npm run build",
     "prepublishOnly": "npm t",
