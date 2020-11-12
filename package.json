@@ -1,6 +1,6 @@
 {
   "name": "react-manage-users",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Manage users in React, for any oauth provider",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
