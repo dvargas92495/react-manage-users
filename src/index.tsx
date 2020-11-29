@@ -1,4 +1,10 @@
-import React, { createContext, useCallback, useContext, useEffect, useState } from "react";
+import React, {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 
 type User = {
   name: string;
@@ -57,4 +63,4 @@ export const useLogout = () => {
     return () => {};
   }
   return useCallback(() => setUser(), [setUser]);
-} 
+};
