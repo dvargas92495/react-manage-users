@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useEffect, useState } from "react";
+import React, { createContext, useCallback, useContext, useEffect, useState } from "react";
 
 type User = {
   name: string;
@@ -50,3 +50,11 @@ export const UserProvider = ({
 };
 
 export const useUser = () => useContext(UserContext).user;
+
+export const useLogout = () => {
+  const setUser = useContext(UserContext).setUser;
+  if (!setUser) {
+    return () => {};
+  }
+  return useCallback(() => setUser(), [setUser]);
+} 
