@@ -3,5 +3,8 @@
     "tslint:recommended",
     "tslint-config-prettier",
     "tslint-react-hooks"
-  ]
+  ],
+  "rules": {
+    "no-empty": [true, "allow-empty-functions"]
+  }
 }
